@@ -110,6 +110,9 @@ Author's custom styles
 /* Basic Styles */
 body {
   background-color: #ece8e5;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 /* Nav */
@@ -117,12 +120,15 @@ nav {
   height: 60px;
   width: 100%;
   background: #1955A4;
-  font-size: 11pt;
-  font-family: 'PT Sans', Arial, sans-serif;
+  opacity: 0.8;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 1em;
   font-weight: 400;
   position: fixed;
+  z-index: 999;
   top: 0;
-  border-bottom: 2px solid #283744;
+  border-bottom: 5px solid #283744;
+  margin-bottom: 61px;
 }
 nav img {
   position: absolute;
@@ -132,7 +138,7 @@ nav ul {
   padding: 0;
   margin: 0 auto;
   margin-right: 0;
-  width: 600px;
+  width: 660px;
   height: 60px;
 }
 nav li {
@@ -142,7 +148,7 @@ nav li {
 nav a {
   color: #fff;
   display: inline-block;
-  width: 100px;
+  width: 110px;
   text-align: center;
   text-decoration: none;
   line-height: 60px;
@@ -166,8 +172,69 @@ nav a#pull {
 }
 /* slider */
 
+.slideWrapper {
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 61px;
+  text-align: center;
+}
+.content {
+  /*width: 100vw;*/
+  margin: 0 auto;
+  position: relative;
+}
+hr {
+  height: 2px;
+  color: white;
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.25);
 
+}
+section {
+  background-color: white;
+  border: 1px solid #4D4D4D;
+  box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 3em;
+  padding: 5em;
+}
+.section-wrap {
+  padding-top: 2em;
+}
 
+section#tlumaczenia {
+  margin-top: 3em;
+  padding: 5em;
+  background-image: url("../img/tlumaczenia-1200x600.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#tlumaczenia  h2 {
+  color: #4D4D4D;
+  font-size: 2em;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 3em;
+}
+#tlumaczenia p {
+  text-align:center;
+  color: #4D4D4D;
+  font-size: 1.5em;
+}
+#tlumaczenia span {
+  color: #666;
+  font-weight: 600;
+}
+#tlumaczenia a {
+  color: #1955A4;
+  text-decoration: none;
+}
+img.icon {
+  width: 32px;
+  height: 32px;
+}
 
 
 
