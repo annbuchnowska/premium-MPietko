@@ -1,5 +1,3 @@
-// Nav menu
-
 jQuery(document).ready(function(){
   jQuery('#slider').slippry()
 });
