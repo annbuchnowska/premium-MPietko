@@ -112,7 +112,8 @@ body {
   /*display: flex;
   flex-direction: column;*/
   background-color: #fff;
-  font-family: 'Raleway', Arial, sans-serif;
+  /*font-family: 'Raleway', Arial, sans-serif;*/
+  font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
 }
 *, *::before, *::after {
@@ -130,6 +131,7 @@ h2 {
 p, ul, li {
   color: #4D4D4D;
   font-size: 1em;
+  font-weight: 300;
 }
 h4 {
   color: #fff;
@@ -157,20 +159,20 @@ section {
   background-color: #fff;
   /*border: 1px solid #4D4D4D;
   box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);*/
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 0 5em 5em;
 }
 .section-wrap {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 .section-description {
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 300;
     padding: 0px 20%;
     margin-bottom: 5%;
 }
 .section-description span {
-  font-weight: 300;
+  font-weight: 400;
 }
 .line {
   width: 50px;
@@ -263,6 +265,28 @@ hr {
 }
 
 /* ****************************** */
+/* home */
+/* ****************************** */
+
+#home p {
+  margin-bottom: 40px;
+}
+.btn a {
+  background-color: transparent;
+  border: 2px solid #173444;
+  color: #173444;
+  padding: 12px 30px;
+  text-decoration: none;
+}
+.btn a:hover {
+  background-color:#173444;
+  color: #fff;
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s all;
+}
+
+
+/* ****************************** */
 /* section offer */
 /* ****************************** */
 .section-offer {
@@ -316,7 +340,7 @@ hr {
 .offer-2item:hover,
 .offer-3item:hover {
   background-color: #fff;
-  /*box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);*/
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.75);
   transition-duration: 0.6s;
 }
 .offer-2item:hover .item-details,
@@ -338,6 +362,17 @@ hr {
 /* ****************************** */
 /* section for-school and contact*/
 /* ****************************** */
+.section-description-school {
+  color: #173444;
+  margin-bottom: 5%;
+}
+.section-description-school span {
+  font-weight: 700;
+  color: #0494d5;
+}
+.security {
+  color: #0494d5;
+}
 .for-school, .contact-wrap {
   display: flex;
   flex-direction: row;
@@ -351,6 +386,7 @@ hr {
 .extreme-image {
   background-image: url("../img/sport.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .extreme-content, .contact-content {
@@ -360,11 +396,13 @@ ul.extreme-list {
   list-style-image: url("../img/icons/check.png");
   line-height: 2em;
 }
+.info {
+  font-weight: 600;
+}
 
 /* ****************************** */
 /* section download */
 /* ****************************** */
-
 
 .section-download {
   background-color: #173444;
@@ -395,14 +433,12 @@ ul.extreme-list {
   transition: 0.5s all;
 }
 
-
 /* ****************************** */
 /* section translate */
 /* ****************************** */
 
-
 section#tlumaczenia {
-  margin-top: 3em;
+  margin-top: 2em;
   background-image: url("../img/tlumaczenia-1200x600.jpg");
   background-position: center center;
   background-size: cover;
@@ -413,7 +449,6 @@ section#tlumaczenia {
   text-align: left;
 }
 
-
 /* ****************************** */
 /* section contact */
 /* ****************************** */
@@ -423,7 +458,6 @@ section#tlumaczenia {
   flex-direction: column;
   width: 50%;
 }
-
 
 img.icon {
   width: 24px;
@@ -440,6 +474,7 @@ img.icon {
   color: #fff;
   height: 60px;
   line-height: 61px;
+  margin-top: 20px;
 }
 .footer-content a:hover {
   color: #fff;
@@ -450,7 +485,7 @@ img.icon {
 
 
 /* Styles for screen 720px and lower */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   section {
     padding: 0 1em 1em;
   }
@@ -526,6 +561,27 @@ img.icon {
   }
   .offer-wrap {
     margin-bottom: 0%;
+  }
+  /* for-school */
+  .for-school, .contact-wrap {
+    flex-direction: column;
+  }
+  .extreme-content {
+    width: 100%;
+  }
+  /* download */
+  .documents {
+    flex-direction: column;
+  }
+  /* contact */
+  .contact-wrap {
+    flex-direction: column;
+  }
+  .contact-content, .contact-map {
+    width: 100%;
+  }
+  .back {
+    margin: 20px;
   }
 }
 
